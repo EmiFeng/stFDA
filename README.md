@@ -27,7 +27,22 @@ source('stFDA_functions.R')
 ```
 
 ### 3. Run stFDA
+```
+# install packages from Bioconductor
+bioconductor.packages <- c("GSEABase", "AUCell", "SummarizedExperiment", 
+                           "singscore", "GSVA", "ComplexHeatmap", "ggtree", 
+                           "Nebulosa")
+if (!requireNamespace(bioconductor.packages, quietly = TRUE)) { 
+    BiocManager::install(bioconductor.packages, ask = F, update = F)
+}
 
+if (!requireNamespace("UCell", quietly = TRUE)) { 
+    devtools::install_github("carmonalab/UCell")
+}
+if (!requireNamespace("irGSEA", quietly = TRUE)) { 
+    devtools::install_github("chuiqin/irGSEA")
+}
+```
 #### Merge datasets
 
 ```
