@@ -25,8 +25,6 @@ library(ggplot2)
 library(ggpubr)
 source('stFDA_functions.R')
 ```
-
-### 3. Run stFDA
 ```
 # install packages from Bioconductor
 bioconductor.packages <- c("GSEABase", "AUCell", "SummarizedExperiment", 
@@ -43,6 +41,8 @@ if (!requireNamespace("irGSEA", quietly = TRUE)) {
     devtools::install_github("chuiqin/irGSEA")
 }
 ```
+### 3. Run stFDA
+
 #### Merge datasets
 
 ```
