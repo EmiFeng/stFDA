@@ -159,6 +159,7 @@ S41_AAACCGTTCGTCCAGG-1               2529.504   3855.121          2915.817
 S41_AAACCTCATGAAGTTG-1               2561.356   3876.238          2549.837
 S41_AAACGAGACGGTTGAT-1               2342.973   3084.321          2202.788
 ```
+![image](https://github.com/EmiFeng/stFDA/assets/41361743/358eaa1d-4def-4fba-9317-acee84a095f4)
 
 #### Spatially Enriched Spots
 
@@ -182,6 +183,7 @@ S41_AAACCGTTCGTCCAGG-1                      0          0                 0
 S41_AAACCTCATGAAGTTG-1                      0          0                 0
 S41_AAACGAGACGGTTGAT-1                      0          0                 0
 ```
+![image](https://github.com/EmiFeng/stFDA/assets/41361743/34bc4223-a2f8-485c-9cde-e1968750eb9f)
 
 ```R
 ssgsea_enriched <-  stFDA_enrichedSpots(assign = ssgsea_result, strds = strds, outdir = ".", prefix = 'ssgsea')
@@ -223,3 +225,6 @@ stFDA_diffplot(table = ssgsea_enriched, outdir = '.', prefix = 'ssgsea', stat_te
 11   0.1863       ns T-test
 12   0.0091       ** T-test
 ```
+![image](https://github.com/EmiFeng/stFDA/assets/41361743/d19ced80-5cba-4b52-94e3-4056fb6c9b1c)
+
+
