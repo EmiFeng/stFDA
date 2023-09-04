@@ -71,11 +71,13 @@ source('stFDA_functions.R')
 Function: merge spatial Seurat objects
 
 **obj_list:** list of st seurat objects. 
+
 **sample_list:** sample names.
+
 **group_list:** group names.
 
 ```R
-sam_gr <- read.table('group_BMI.xls',header = T)
+sam_gr <- read.table('test/group_BMI.xls',header = T)
 
 > sam_gr
    sample      group   strds
@@ -99,8 +101,11 @@ strds <- stFDA_mergeST(obj_list = sam_gr$strds, sample_list = sam_gr$sample, gro
 Function: to get cell type signature genesets from scRNA-seq data, based on Seurat FindMarkers() function. Return a list of signatures, can be used for function stFDA_Scoring()
 
 **scrds:** scRNA-seq seurat object with cell type annotation. 
-number: maximum number of genes selected for a signature, default = 50, which means select top 50 ( avg_log2FC ordered) upregulated DEGs with significance. Note that mitochondrial and ribosomal genes will be excluded for signature gene selection. 
+
+**number:** maximum number of genes selected for a signature, default = 50, which means select top 50 ( avg_log2FC ordered) upregulated DEGs with significance. Note that mitochondrial and ribosomal genes will be excluded for signature gene selection. 
+
 **group.by:** whether to change active.ident, default not to change; if change, give the colname stored in meta.data, for example, 'new_ident'.
+
 **downsample:** whether to downsample cells for idents, default not to; suggest to use when cell number is too large, for exsample, downsample = 2000.
 
 ```R
@@ -131,15 +136,25 @@ load('sc_signature.Rdata')
 stFDA_Scoring enables integrated spatial feature scoring. Feature scoring is based on irGSEA.score() function from irGSEA package, which collected 4 scoring methods, AUCell, Ucell, singscore and ssgsea. Returns a feature scoring table as well as spatial feature plots for features. Suggest not to input large amount of genesets for analysis.
 
 **obj:** spatial seurat object, if you have multiple samples, you can use the result from stFDA_mergeST.
+
 **features:** functional genesets, can be feature list (return from stFDA_scSignatures()) or gmt file. 
+
 **method:** choose one scoring method from "AUCell", "UCell", "singscore", "ssgsea", default = "ssgsea".
+
 **assay:** which assay to use, default = 'Spatial', check Seurat object for more information.
+
 **slot:** which data slot to use, default = 'data', check Seurat object for more information.
+
 **custom:** Default TRUE. Set it to TRUE when input own genesets; set it to FALSE when use msigdb genesets.
+
 **msigdb:** Default FALSE. Set it to TRUE when custom = FALSE.
+
 **category:** Choose a msigdb category for analysis, default='H' . Use msigdbr::msigdbr_collections to view all available collections gene sets.
+
 **species:** Default Homo sapiens. Use msigdbr::msigdbr_show_species() to view all available species. The parameter works if msigdb is True.
+
 **outdir:** output directory path.
+
 **prefix:** prefix of output files.
 
 ```R
@@ -166,10 +181,15 @@ S41_AAACGAGACGGTTGAT-1               2342.973   3084.321          2202.788
 Based on the table of feature scoring from stFDA_Scoring(), stFDA_threshold() and stFDA_enrichedSpots() could detect spatially enriched spots. Return assigned table as well as the fraction of enriched spots of every sample. For every celltype or feature (column), 1 represents for celltype/feature-enriched spots, while 0 represents for non-enriched spots. Multiple celltypes or features can be enriched in a single spot.
 
 **data:** the table of feature scoring from stFDA_Scoring()
+
 **obj:** spatial seurat object, if you have multiple samples, you can use the result from stFDA_mergeST.
+
 **outlier:** to define a high-threshold as the maximum score after excluding top X percent outliers with highest scores. default = 0.01
+
 **percent:** to determine a low-threshold cross which was regarded as a enriched spot. default = 0.7
+
 **outdir:** output directory path.
+
 **prefix:** prefix of output files.
 
 ```R
