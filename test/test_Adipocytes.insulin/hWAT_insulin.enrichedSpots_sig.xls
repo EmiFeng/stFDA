@@ -1,0 +1,4 @@
+celltype	.y.	group1	group2	p	p.adj	p.format	p.signif	method
+Adipo-LEP	percent	insulin	no	0.908305211051747	1	0.908	ns	T-test
+Adipo-PLIN	percent	insulin	no	0.0540990965802135	0.16	0.054	ns	T-test
+Adipo-SAA	percent	insulin	no	0.680775705332822	1	0.681	ns	T-test
