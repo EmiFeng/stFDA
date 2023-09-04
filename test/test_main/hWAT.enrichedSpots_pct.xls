@@ -1,0 +1,56 @@
+sample	group	percent	celltype
+S41	lean	0.182842830306825	Mononuclear phagocytes
+S42	overweight	0.201192250372578	Mononuclear phagocytes
+S43	overweight	0.29493545183714	Mononuclear phagocytes
+S44	lean	0.278896672504378	Mononuclear phagocytes
+S45	lean	0.326813567714781	Mononuclear phagocytes
+S46	overweight	0.167199634536318	Mononuclear phagocytes
+S47	overweight	0.1434375	Mononuclear phagocytes
+S48	lean	0.219317898929549	Mononuclear phagocytes
+S49	obese	0.152728269810803	Mononuclear phagocytes
+S50	obese	0.19047619047619	Mononuclear phagocytes
+S51	obese	0.225757245587274	Mononuclear phagocytes
+S41	lean	0.0231684408265498	Adipocytes
+S42	overweight	0.0466964729259811	Adipocytes
+S43	overweight	0.0908639523336643	Adipocytes
+S44	lean	0.00131348511383538	Adipocytes
+S45	lean	0.00247586036147561	Adipocytes
+S46	overweight	0.014846962083143	Adipocytes
+S47	overweight	0.0525	Adipocytes
+S48	lean	0.729897933781429	Adipocytes
+S49	obese	0.657526734302166	Adipocytes
+S50	obese	0.617842073538276	Adipocytes
+S51	obese	0.7696665940292	Adipocytes
+S41	lean	0.191609267376331	Endothelial cells
+S42	overweight	0.12220566318927	Endothelial cells
+S43	overweight	0.167825223435948	Endothelial cells
+S44	lean	0.239929947460595	Endothelial cells
+S45	lean	0.172072295122555	Endothelial cells
+S46	overweight	0.0810872544540886	Endothelial cells
+S47	overweight	0.0896875	Endothelial cells
+S48	lean	0.228279810804083	Endothelial cells
+S49	obese	0.116808335618316	Endothelial cells
+S50	obese	0.15792646172393	Endothelial cells
+S51	obese	0.119633907169318	Endothelial cells
+S41	lean	0.110832811521603	Adipose-derived stem cells
+S42	overweight	0.122702434177844	Adipose-derived stem cells
+S43	overweight	0.166335650446872	Adipose-derived stem cells
+S44	lean	0.207530647985989	Adipose-derived stem cells
+S45	lean	0.187670215399851	Adipose-derived stem cells
+S46	overweight	0.0568752855185016	Adipose-derived stem cells
+S47	overweight	0.0846875	Adipose-derived stem cells
+S48	lean	0.223549912870301	Adipose-derived stem cells
+S49	obese	0.201535508637236	Adipose-derived stem cells
+S50	obese	0.231464737793852	Adipose-derived stem cells
+S51	obese	0.246894748311179	Adipose-derived stem cells
+S41	lean	0.0958046336881653	Mast cells
+S42	overweight	0.0213611525086935	Mast cells
+S43	overweight	0.117676266137041	Mast cells
+S44	lean	0.264010507880911	Mast cells
+S45	lean	0.483783114632335	Mast cells
+S46	overweight	0.0317496573777981	Mast cells
+S47	overweight	0.03625	Mast cells
+S48	lean	0.100323624595469	Mast cells
+S49	obese	0.0205648478201261	Mast cells
+S50	obese	0.0361663652802893	Mast cells
+S51	obese	0.0479407278274134	Mast cells

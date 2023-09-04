@@ -1,0 +1,16 @@
+celltype	.y.	group1	group2	p	p.adj	p.format	p.signif	method
+Mononuclear phagocytes	percent	lean	overweight	0.316910917973521	1	0.3169	ns	T-test
+Mononuclear phagocytes	percent	lean	obese	0.165925451421509	1	0.1659	ns	T-test
+Mononuclear phagocytes	percent	overweight	obese	0.772827489884719	1	0.7728	ns	T-test
+Adipocytes	percent	lean	overweight	0.500492925990589	1	0.5005	ns	T-test
+Adipocytes	percent	lean	obese	0.0681529116122897	0.75	0.0682	ns	T-test
+Adipocytes	percent	overweight	obese	0.00237940049627848	0.036	0.0024	**	T-test
+Endothelial cells	percent	lean	overweight	0.0111910563883294	0.15	0.0112	*	T-test
+Endothelial cells	percent	lean	obese	0.0138527667766994	0.17	0.0139	*	T-test
+Endothelial cells	percent	overweight	obese	0.524304094490889	1	0.5243	ns	T-test
+Adipose-derived stem cells	percent	lean	overweight	0.0732700177100491	0.75	0.0733	ns	T-test
+Adipose-derived stem cells	percent	lean	obese	0.186254702742159	1	0.1863	ns	T-test
+Adipose-derived stem cells	percent	overweight	obese	0.00914843515720023	0.13	0.0091	**	T-test
+Mast cells	percent	lean	overweight	0.13532405373543	1	0.1353	ns	T-test
+Mast cells	percent	lean	obese	0.114719772114653	1	0.1147	ns	T-test
+Mast cells	percent	overweight	obese	0.516424166326893	1	0.5164	ns	T-test
